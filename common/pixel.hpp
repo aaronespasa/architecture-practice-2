@@ -2,6 +2,7 @@
 #define IMAGES_COMMON_PIXEL_HPP
 
 #include <cstdint>
+#include <omp.h>
 #include <array>
 #include <iostream>
 

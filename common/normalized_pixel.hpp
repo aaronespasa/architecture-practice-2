@@ -1,6 +1,7 @@
 #ifndef IMAGES_COMMON_NORMALIZED_PIXEL_HPP
 #define IMAGES_COMMON_NORMALIZED_PIXEL_HPP
 
+#include <omp.h>
 #include "common/pixel.hpp"
 
 namespace images::common {

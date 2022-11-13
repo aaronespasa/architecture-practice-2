@@ -8,13 +8,15 @@ add_compile_options(-Wall -Wextra -Werror -pedantic -pedantic-errors)
 
 set(CMAKE_CXX_FLAGS_RELEASE "-march=native")
 
+find_package(OpenMP REQUIRED)
+
 add_subdirectory(common)
 add_subdirectory(aos)
 add_subdirectory(soa)
 add_executable(img-aos imageaos.cpp)
 add_executable(img-soa imagesoa.cpp)
-target_link_libraries(img-aos aos common)
-target_link_libraries(img-soa soa common)
+target_link_libraries(img-aos PUBLIC aos common)
+target_link_libraries(img-soa PUBLIC soa common)
 target_include_directories(img-aos PUBLIC common aos)
 target_include_directories(img-soa PUBLIC common soa)
 
