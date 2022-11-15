@@ -7,49 +7,49 @@ echo "Evaluating the 3 functions both for SOA & AOS"
 echo "------------ HISTOGRAM (AOS) ------------ "
 
 echo "Performance:"
-perf stat ./build/img-aos ./in ./out histo
+perf stat ./release/img-aos ./in ./out histo
 
 echo "Energy:"
-perf stat -a -e $ENERGY_PARAMETERS ./build/img-aos ./in ./out histo
+perf stat -a -e $ENERGY_PARAMETERS ./release/img-aos ./in ./out histo
 
 echo "------------ GRAYSCALE (AOS) ------------ "
 
 echo "Performance:"
-perf stat ./build/img-aos ./in ./out mono
+perf stat ./release/img-aos ./in ./out mono
 
 echo "Energy:"
-perf stat -a -e $ENERGY_PARAMETERS ./build/img-aos ./in ./out mono
+perf stat -a -e $ENERGY_PARAMETERS ./release/img-aos ./in ./out mono
 
 echo "------------ GAUSS (AOS) ------------ "
 
 echo "Performance:"
-perf stat ./build/img-aos ./in ./out gauss
+perf stat ./release/img-aos ./in ./out gauss
 
 echo "Energy:"
-perf stat -a -e $ENERGY_PARAMETERS ./build/img-aos ./in ./out gauss
+perf stat -a -e $ENERGY_PARAMETERS ./release/img-aos ./in ./out gauss
 
 echo "------------ HISTOGRAM (SOA) ------------ "
 
 echo "Performance:"
-perf stat ./build/img-soa ./in ./out histo
+perf stat ./release/img-soa ./in ./out histo
 
 echo "Energy:"
-perf stat -a -e $ENERGY_PARAMETERS ./build/img-soa ./in ./out histo
+perf stat -a -e $ENERGY_PARAMETERS ./release/img-soa ./in ./out histo
 
 echo "------------ GRAYSCALE (SOA) ------------ "
 
 echo "Performance:"
-perf stat ./build/img-soa ./in ./out mono
+perf stat ./release/img-soa ./in ./out mono
 
 echo "Energy:"
-perf stat -a -e $ENERGY_PARAMETERS ./build/img-soa ./in ./out mono
+perf stat -a -e $ENERGY_PARAMETERS ./release/img-soa ./in ./out mono
 
 echo "------------ GAUSS (SOA) ------------ "
 
 echo "Performance:"
-perf stat ./build/img-soa ./in ./out gauss
+perf stat ./release/img-soa ./in ./out gauss
 
 echo "Energy:"
-perf stat -a -e $ENERGY_PARAMETERS ./build/img-soa ./in ./out gauss
+perf stat -a -e $ENERGY_PARAMETERS ./release/img-soa ./in ./out gauss
 
 echo "Finished evaluating"
