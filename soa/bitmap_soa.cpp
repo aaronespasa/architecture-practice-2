@@ -119,7 +119,7 @@ namespace images::soa {
   histogram bitmap_soa::generate_histogram() const noexcept {
     histogram histo;
     const int pixel_count = width() * height();
-    // #pragma omp parallel for
+    #pragma omp parallel for
     for (int i = 0; i < pixel_count; ++i) {
       histo.add_red(pixels[red_channel][i]);
       histo.add_green(pixels[green_channel][i]);
