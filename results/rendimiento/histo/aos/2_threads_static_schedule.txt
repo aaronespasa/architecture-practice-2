@@ -1,0 +1,5 @@
+  Process time: 413302
+        2935670015      cycles                    #    3.373 GHz                    
+        1874887998      instructions              #    0.64  insn per cycle         
+         368625081      branches                  #  423.599 M/sec                  
+             76275      branch-misses             #    0.02% of all branches        

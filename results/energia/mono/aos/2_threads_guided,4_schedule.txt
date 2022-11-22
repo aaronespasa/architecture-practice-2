@@ -1,0 +1,4 @@
+  Process time: 281958
+              4.05 Joules energy-cores                                                
+              8.67 Joules energy-pkg                                                  
+              2.24 Joules energy-ram                                                  
